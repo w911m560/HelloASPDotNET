@@ -8,19 +8,37 @@
 
 <p>
     <a asp-controller="Events" asp-action="Add">Add Event</a>
+</p
+<p>
+    <a asp-controller="Events" asp-action="Delete">Delete Event</a>
 </p>
 
 @if (ViewBag.events.Count == 0)
 {
-    <p> No events yet!</p>
+    <p>No events yet!</p>
 }
-
-<table class="table table-dark">
-    @foreach (KeyValuePair<string, string> meeting in ViewBag.events)
-    {
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+        </tr>
+        @foreach (var evt in ViewBag.events)
+        {
     <tr>
-        <td>@meeting.Key</td>
-        <td>@meeting.Value</td>
+        <td>@evt.Id</td>
+        <td>@evt.Name</td>
+        <td>@evt.Description</td>
+        <td><a asp-controller="Events" asp-action="Edit" asp-route-id="@evt.Id">Edit Event</a></td>
     </tr>
-    }
-</table>
+        }
+    </table>
+}

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloASPDotNET", "HelloASPDotNET\HelloASPDotNET.csproj", "{F1B1B5AD-8063-4AF4-80EE-A34726EE157F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodingEvents", "HelloASPDotNET\CodingEvents.csproj", "{F1B1B5AD-8063-4AF4-80EE-A34726EE157F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
